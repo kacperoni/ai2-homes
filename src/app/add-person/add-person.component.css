@@ -1,0 +1,47 @@
+.contianer{
+  padding: 15px;
+}
+
+form {
+  max-width: 600px;
+  padding: 10px;
+}
+
+button {
+  max-width: 200px;
+}
+
+.form-row > label{
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid dodgerblue;
+  font-size: 1em;
+}
+
+.form-row{
+  margin: 15px 0;
+}
+
+button{
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: mediumseagreen;
+  color: #FDFDFD;
+  font-weight: bold;
+  border: none;
+  box-shadow: rgba(80, 80, 80, 0.5) 2px 1px 5px 1px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top:10px;
+}
+
+button:hover{
+  background-color: seagreen;
+}

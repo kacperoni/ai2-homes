@@ -1,0 +1,38 @@
+header, footer{
+  display: flex;
+  align-items: center;
+  color: #FDFDFD;
+}
+
+header{
+  height: 100px;
+  padding: 0 25px;
+  background-color: dodgerblue;
+  justify-content: space-between;
+}
+
+
+footer{
+  width: 100vw;
+  height: 50px;
+  background-color: mediumseagreen;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.button{
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: mediumseagreen;
+  color: #FDFDFD;
+  font-weight: bold;
+  border: none;
+  box-shadow: rgba(80, 80, 80, 0.5) 2px 1px 5px 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover{
+  background-color: seagreen;
+}

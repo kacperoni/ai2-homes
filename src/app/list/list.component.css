@@ -1,0 +1,16 @@
+ul{
+  padding:10px;
+}
+
+button{
+  margin: 0 5px;
+  border: 1px solid indianred;
+  border-radius: 10px;
+  color:indianred;
+  padding: 5px 10px;
+}
+
+button:hover{
+  background-color: indianred;
+  color: #FDFDFD;
+}
