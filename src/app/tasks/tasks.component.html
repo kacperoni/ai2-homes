@@ -1,31 +1,56 @@
 <div class="container">
   <form class="new-task">
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input
+        matInput type="text"
+        id="title"
+        name="title"
+        [(ngModel)]="newTask.title"
+        [disabled]="isProcessing"
+      />
+      <mat-hint>Enter at least 1 character.</mat-hint>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Deadline</mat-label>
+      <input
+        matInput
+        [matDatepicker]="deadlinePicker"
+        type="date"
+        id="deadline"
+        name="deadline"
+        [(ngModel)]="newTask.deadline"
+        [disabled]="isProcessing"
+      />
+      <mat-hint>Specifying date is optional.</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="deadlinePicker"></mat-datepicker-toggle>
+      <mat-datepicker #deadlinePicker></mat-datepicker>
+    </mat-form-field>
     <div class="form-group">
-      <label for="title">Title</label>
-      <input type="text" id="title" name="title" [(ngModel)]="newTask.title" class="form-control" [disabled]="isProcessing" />
-    </div>
-    <div class="form-group">
-      <label for="deadline">Deadline</label>
-      <input type="date" id="deadline" name="deadline" [(ngModel)]="newTask.deadline" class="form-control" [disabled]="isProcessing" />
-    </div>
-    <div class="form-group">
-      <br>
-      <button type="button" class="btn btn-primary" (click)="addTask()" [disabled]="isProcessing">
+      <button
+        mat-raised-button color="accent"
+        (click)="addTask()"
+        [disabled]="!canAddTask()"
+      >
         {{isProcessing ? 'Processing...' : 'Add Task'}}
       </button>
     </div>
   </form>
 
   <div class="tasks">
-    <div class="task" *ngFor="let task of tasks" [ngClass]="{'checked': task.completed}">
-      <div class="title" [ngClass]="{'checked': task.completed}">{{task.title}}</div>
-      <div class="deadline" [ngClass]="{'checked': task.completed}">
-        <span *ngIf="task.deadline" >{{task.deadline}}</span>
-      </div>
-      <div class="actions">
-        <input type="checkbox" [(ngModel)]="task.completed" (change)="handleChange(task)" />
-      </div>
-    </div>
+    <mat-card *ngFor="let task of tasks" [class.checked]="task.completed">
+      <mat-card-header>
+        <mat-card-subtitle *ngIf="task.deadline">{{task.deadline}}</mat-card-subtitle>
+        <mat-card-title>{{task.title}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-actions align="end">
+        <mat-checkbox [(ngModel)]="task.completed" (change)="handleChange(task)" />
+      </mat-card-actions>
+    </mat-card>
   </div>
-  <button class="btn btn-primary" (click)="archiveCompleted()">Archive Completed</button>
+  <button
+    mat-raised-button color="accent"
+    (click)="archiveCompleted()"
+    [disabled]="!canArchiveCompleted()"
+  >Archive Completed</button>
 </div>

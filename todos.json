@@ -1,11 +1,25 @@
 {
   "todos": [
     {
-      "id": 2,
-      "title": "Hello Again World",
-      "deadline": "2000-01-01",
+      "title": "First task",
+      "deadline": "2023-12-08",
+      "completed": false,
+      "archived": false,
+      "id": 3
+    },
+    {
+      "title": "Second Task ",
+      "deadline": "2023-12-13",
       "completed": true,
-      "archived": true
+      "archived": false,
+      "id": 4
+    },
+    {
+      "title": "Archived task",
+      "deadline": "2023-11-27",
+      "completed": true,
+      "archived": true,
+      "id": 5
     }
   ]
 }

@@ -63,4 +63,18 @@ export class TasksComponent implements OnInit{
       this.ngOnInit();
     })
   }
+
+  canArchiveCompleted(): boolean{
+    for(const task of this.tasks){
+      if(task.completed){
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  canAddTask(): boolean{
+    return this.newTask.title !== undefined;
+  }
 }

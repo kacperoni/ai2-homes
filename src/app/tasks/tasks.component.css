@@ -37,11 +37,6 @@ form{
   margin-bottom: 15px;
   gap: 15px;
 }
-
-.form-group{
-  width:400px;
-}
-
 .form-control{
   border-radius: 8px;
   border: 2px solid dodgerblue;
@@ -67,8 +62,4 @@ form{
 
 .btn.btn-primary:hover{
   background-color: mediumaquamarine;
-}
-
-label{
-  display: block;
 }
