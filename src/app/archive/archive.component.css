@@ -1,0 +1,44 @@
+.container{
+  padding:20px 50px;
+}
+
+.tasks{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.task{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid mediumaquamarine;
+  background-color: aquamarine;
+}
+
+.deadline{
+  background-color: lightcoral;
+  color: white;
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid white;
+}
+
+.title{
+  width: 60%;
+}
+
+.btn.btn-primary{
+  border-radius: 8px;
+  border: 2px solid #fd4b4b;
+  padding: 5px 10px;
+  color:white;
+  background-color: indianred;
+  cursor: pointer;
+}
+
+.btn.btn-primary:hover{
+  background-color: #fd4b4b;
+}

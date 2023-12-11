@@ -1,0 +1,74 @@
+.container{
+  padding:20px 50px;
+}
+
+.tasks{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.task{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid mediumaquamarine;
+  background-color: aquamarine;
+}
+
+.deadline{
+  background-color: lightcoral;
+  color: white;
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid white;
+}
+
+.title{
+  width: 60%;
+}
+
+form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.form-group{
+  width:400px;
+}
+
+.form-control{
+  border-radius: 8px;
+  border: 2px solid dodgerblue;
+  font-size: 1.2rem;
+  padding: 5px;
+  width: 100%;
+}
+
+.btn.btn-primary{
+  border-radius: 8px;
+  border: 2px solid mediumaquamarine;
+  padding: 6px 2px;
+  font-size: 1.2rem;
+  background-color: aquamarine;
+  width:400px;
+  cursor: pointer;
+}
+
+.checked{
+  text-decoration: line-through;
+  opacity: 80%;
+}
+
+.btn.btn-primary:hover{
+  background-color: mediumaquamarine;
+}
+
+label{
+  display: block;
+}
