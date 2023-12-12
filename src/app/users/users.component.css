@@ -1,0 +1,42 @@
+h2{
+  font-size: 3rem;
+  color: #252525;
+}
+
+ul{
+  padding: 25px;
+  width: 50vw;
+  color: #252525;
+}
+
+li{
+  margin-bottom: 25px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.username{
+  font-size: 1.5rem;
+}
+
+.badges{
+  display: flex;
+  gap: 10px;
+}
+.role-badge{
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.role-user{
+  background-color: aquamarine;
+}
+
+.role-admin{
+  background-color: mediumpurple;
+  color: white;
+}

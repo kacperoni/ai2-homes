@@ -1,0 +1,14 @@
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 2rem;
+  color: #252525;
+}
+
+main > .total{
+  font-size: 4rem;
+  font-weight: bold;
+}

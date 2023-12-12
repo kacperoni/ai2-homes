@@ -1,0 +1,49 @@
+main{
+  color: #252525;
+}
+.unauthorized > div{
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+p{
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.unauthorized{
+  margin: 25px 0;
+}
+
+label{
+  display: block;
+}
+
+input{
+  border-radius: 8px;
+  border: 2px solid dodgerblue;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+input[type=submit]{
+  margin-top: 10px;
+  border: 2px solid mediumaquamarine;
+  background-color: aquamarine;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: mediumaquamarine;
+}
+
+.error{
+  background-color: indianred;
+  border: 2px solid red;
+  border-radius: 8px;
+  color: white;
+  width: 40vw;
+  padding: 10px;
+}

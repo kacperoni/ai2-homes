@@ -1,0 +1,47 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+  background-color: dodgerblue;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: papayawhip;
+  text-decoration: underline;
+}
+
+.router-outlet{
+  padding: 25px;
+}
+
+nav{
+  display: flex;
+  gap:10px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: mediumaquamarine;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+footer > div{
+  display: flex;
+  gap: 20px;
+}
+
+.logout{
+  text-decoration: none;
+}
